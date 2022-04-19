@@ -1,0 +1,124 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 50px;
+}
+
+.cards .card{
+    background: #528cbdd7;
+    color: white;
+    width:300px;
+    height:350px;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: .3s ease-in;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -ms-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
+
+    box-shadow: -3px 0 10px rgba(0,0,0,0.3), -4px 0 10px rgba(0,0,0,0.2),-5px 0 10px rgba(0,0,0,0.1);
+}
+
+.cards .card a{
+    color:#f5f5dc;
+    text-decoration: none;
+    font-weight:bold;
+    transition: .1s ease;
+    -webkit-transition: .1s ease;
+    -moz-transition: .1s ease;
+    -ms-transition: .1s ease;
+    -o-transition: .1s ease;
+}
+
+.cards .card a:hover{
+    color:#dfdfa5
+}
+
+.cards .card .header{
+    flex: 1;
+}
+
+.cards .card:hover{
+    margin-right: 40px;
+    transform: rotate(3deg) translateY(-15px);
+    -webkit-transform: rotate(3deg) translateY(-15px);
+    -moz-transform: rotate(3deg) translateY(-15px);
+    -ms-transform: rotate(3deg) translateY(-15px);
+    -o-transform: rotate(3deg) translateY(-15px);
+}
+
+.cards .card .header .date{
+    padding: 10px 0;
+}
+
+.cards .card .header .title{
+    font-size:28px;
+}
+
+.cards .card .footer .author a{
+    display: flex;
+    align-items: center;
+    gap:10px
+}
+
+.cards .card .footer img{
+    width:58px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+
+.cards .card[class*='element']{
+    margin-left: -30px;
+}
+
+.element-1:hover,
+.element-2:hover{
+    margin-left: -130px;
+}
+
+@media screen and (max-width: 1200px){
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(3,0fr);
+    }
+
+    .cards .card[class*="element"] {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .cards{
+        grid-template-columns: repeat(2,0fr);
+    }
+}
+
+@media screen and (max-width: 712px){
+    .cards{
+        grid-template-columns: repeat(1,0fr);
+        padding: 0;
+        margin: 20px 0 20px 0;
+        
+    }
+}
+

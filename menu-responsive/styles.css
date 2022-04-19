@@ -1,0 +1,144 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.collapsed{
+    display:none;
+}
+
+.logo{
+    font-size: 25px;
+    transition: ease-in .1s;
+    -webkit-transition: ease-in .1s;
+    -moz-transition: ease-in .1s;
+    -ms-transition: ease-in .1s;
+    -o-transition: ease-in .1s;
+}
+
+.logo:hover{
+    font-size: 30px;
+    color: #4293ac;
+}
+
+nav{
+    background: black;
+    color: #fff;
+    width: 100vw;
+    
+}
+
+nav .mobile{
+    display:none;
+}
+
+
+nav .mobile .header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding-left: 10px;
+    height:65px;
+}
+
+nav .mobile .header .more button{
+    border:none;
+    background: transparent;
+    padding: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-size:20px;
+    transition:ease-in .2s all;
+    -webkit-transition:ease-in .2s all;
+    -moz-transition:ease-in .2s all;
+    -ms-transition:ease-in .2s all;
+    -o-transition:ease-in .2s all;
+}
+
+nav .mobile .header .more button:hover{
+    color:#4293ac;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+nav .logo{
+    min-width: 250px;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+    transition: ease-in .2s;
+    -webkit-transition: ease-in .2s;
+    -moz-transition: ease-in .2s;
+    -ms-transition: ease-in .2s;
+    -o-transition: ease-in .2s;
+}
+
+nav a:hover{
+    color: black;
+    background: #4293ac;
+}
+
+nav .desktop{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .desktop .primary,
+nav .desktop .secondary {
+    display: flex;
+}
+
+nav .desktop .secondary.mini{
+    display: none;
+}
+
+@media screen and (max-width: 928px){
+    nav .logo{
+        min-width:100px;
+    }
+
+    nav .secondary.full{
+        display: none;
+    }
+
+    nav .secondary.mini{
+        display:block !important;
+    }
+
+    nav .secondary.mini .submenu{
+        background-color: black;
+        position: absolute;
+        display: none;
+        width: 200px;
+        right:0;
+    }
+
+    nav .secondary.mini:hover .submenu{
+        
+        display: block;
+    }
+}
+
+@media screen and (max-width:530px){
+    nav .desktop{
+        display: none;
+
+    }
+    nav .mobile{
+        display: block;
+        
+    }
+}
+
+

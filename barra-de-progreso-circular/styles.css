@@ -1,0 +1,63 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: blueviolet;
+}
+
+
+.progressbar-container{
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+}
+
+.progressbar-container .outer-box{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #fff;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.progressbar-container .inner-box{
+    /* background: rgb(175, 88, 88); */
+    font-size: 24px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.progressbar-container svg{
+    position: absolute;
+    
+}
+
+.progressbar-container circle{
+    fill: none;
+    stroke:url(#gradientColor);
+    stroke-width:20px;
+    stroke-dasharray: 550;
+    stroke-dashoffset: 550;
+    animation: loading 10s;
+    -webkit-animation: loading 10s;
+}
+
+@keyframes loading {
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
