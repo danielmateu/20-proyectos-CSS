@@ -1,118 +1,57 @@
 body{
     font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 100px;
-    
+     
 }
 
-.ckeckbox-container{
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 10px;
-    cursor: pointer;
-    font-size:22px;
-    user-select: none;
-}
-
-.ckeckbox-container input{
-    position: absolute;
-    opacity: 0;
-    width:0;
-    height:0;
-    cursor: pointer;
-    
-}
-
-.ckeckbox-container .checkmark{
-    position: absolute;
+.search-bar{
+    border:solid 1px #ccc;
+    width: 80vw;
+    border-radius:30px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -ms-border-radius:30px;
+    -o-border-radius:30px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    background: rgb(202, 202, 202);
-    transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -ms-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
+    padding: 5px 10px;
+    margin:100px auto;
+    transition: ease-in .3s;
+    -webkit-transition: ease-in .3s;
+    -moz-transition: ease-in .3s;
+    -ms-transition: ease-in .3s;
+    -o-transition: ease-in .3s;
 }
 
-.ckeckbox-container .checkmark.radio{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    top: 0;
-    left: 0;
-    width: 25px;
-    height: 25px;
-    background: rgb(202, 202, 202);
-    transition: .3s ease-in-out;
-    -webkit-transition: .3s ease-in-out;
-    -moz-transition: .3s ease-in-out;
-    -ms-transition: .3s ease-in-out;
-    -o-transition: .3s ease-in-out;
+.search-bar:focus-within{
+    border: solid 1px #aaa;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
 }
 
-.ckeckbox-container .checkmark .material-icons{
-    color:#fff;
-    transform: scale(0);
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transition: .3s ease-in;
-    -webkit-transition: .3s ease-in;
-    -moz-transition: .3s ease-in;
-    -ms-transition: .3s ease-in;
-    -o-transition: .3s ease-in;
+.search-bar input.text{
+    border:none;
+    outline:none;
+    padding:10px;
+    flex:1;
+
+    font-size:18px;
 }
 
-.ckeckbox-container input:checked ~ .checkmark {
-    background: #2196f3;
+.search-bar .actions{
+    display:flex;
+    gap:5px;
 }
 
-.ckeckbox-container input:checked ~ .checkmark .material-icons{
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
+.search-bar .actions button{
+    border:none !important;
+    outline:none;
+    background: none !important;
+    cursor: pointer;
+    color:#999;
+    transition: ease-in .3s;
+
 }
 
-.ckeckbox-container input:checked ~ .checkmark.radio .circle{
-    position: absolute;
-    border-radius:50%;
-    -webkit-border-radius:50%;
-    -moz-border-radius:50%;
-    -ms-border-radius:50%;
-    -o-border-radius:50%;
-    top: 6px !important;
-    left: 7px !important;
-    height:12px;
-    width:12px;
-    background: #eee;
-    transition: .3s ease-in-out ;
-    -webkit-transition: .3s ease-in-out ;
-    -moz-transition: .3s ease-in-out ;
-    -ms-transition: .3s ease-in-out ;
-    -o-transition: .3s ease-in-out ;
+.search-bar .actions button:hover{
+    color:#228999fe;
+
 }
-
-
-
-
