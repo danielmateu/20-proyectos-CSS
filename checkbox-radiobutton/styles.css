@@ -75,11 +75,11 @@ body{
     -moz-transform: scale(0);
     -ms-transform: scale(0);
     -o-transform: scale(0);
-    transition: .5 ease-in;
-    -webkit-transition: .5 ease-in;
-    -moz-transition: .5 ease-in;
-    -ms-transition: .5 ease-in;
-    -o-transition: .5 ease-in;
+    transition: .3s ease-in;
+    -webkit-transition: .3s ease-in;
+    -moz-transition: .3s ease-in;
+    -ms-transition: .3s ease-in;
+    -o-transition: .3s ease-in;
 }
 
 .ckeckbox-container input:checked ~ .checkmark {
